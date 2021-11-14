@@ -38,7 +38,7 @@ export default function Navbar(props) {
       <div className="container">
         <h2 className={`my-4 text-${props.mode === "light" ? "dark" : "light"}`}>Some More Things About Your Text!</h2>
         <p className={`my-3 text-${props.mode === "light" ? "dark" : "light"}`}>Characters :- <span className="badge bg-secondary">{text.length}</span></p>
-        <p className={`my-3 text-${props.mode === "light" ? "dark" : "light"}`}>Words :- <span className="badge bg-secondary">{text.split(" ").filter((element) =>{return element.length != 0}).length}</span></p>
+        <p className={`my-3 text-${props.mode === "light" ? "dark" : "light"}`}>Words :- <span className="badge bg-secondary">{text.split(" ").filter((element) =>{return element.length !== 0}).length}</span></p>
         <p className={`my-3 text-${props.mode === "light" ? "dark" : "light"}`}>Time To Read :- <span className="badge bg-secondary">{60 * 0.008 * text.split(" ").length} Seconds</span></p>
       </div>
 	  <div className="container">
